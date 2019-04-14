@@ -13,7 +13,8 @@ The problem is set up in a large, square world. The state space has 37 dimension
 
 The task is episodic, and in order to solve the environment, the agent must get an average score of +13 over 100 consecutive episodes.
 
-The project environment is similar to, but not identical to the Banana Collector environment on the Unity ML-Agents GitHub page https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#banana-collector. 
+The project environment is similar to, but not identical to the Banana Collector environment on the [Unity ML-Agents GitHub page]   
+(https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#banana-collector). 
 
 ### Setup - instructions from Udacity
 
