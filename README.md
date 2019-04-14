@@ -15,16 +15,41 @@ The task is episodic, and in order to solve the environment, the agent must get 
 
 ### Setup - instructions from Udacity
 
-Download the environment from one of the links below.  You need only select the environment that matches your operating system:
 
-    - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
-    - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
-    - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
-    - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
-    
-    (_For Windows users_) Check out [this link](https://support.microsoft.com/en-us/help/827218/how-to-determine-whether-a-computer-is-running-a-32-bit-version-or-64) if you need help with determining if your computer is running a 32-bit version or 64-bit version of the Windows operating system.
+#### Step 1: Clone the repo
+Clone this repo using `git clone https://github.com/danielnbarbosa/drlnd_navigation.git`.
 
-    (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip) to obtain the environment.
+
+#### Step 2: Install Dependencies
+Create an anaconda environment that contains all the required dependencies to run the project.
+
+Mac:
+```
+conda create --name drlnd_navigation python=3.6
+source activate drlnd_navigation
+conda install -y python.app
+conda install -y pytorch -c pytorch
+pip install torchsummary unityagents
+```
+
+Windows:
+```
+conda create --name drlnd_navigation python=3.6
+activate drlnd_navigation
+conda install -y pytorch -c pytorch
+pip install torchsummary unityagents
+```
+
+#### Step 3: Download Banana environment
+You will also need to install the pre-built Unity environment, you will NOT need to install Unity itself.  Select the appropriate file for your operating system:
+
+- Linux: click [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
+- Mac OSX: click [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
+- Windows (32-bit): click [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
+- Windows (64-bit): click [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
+
+Download the file into the top level directory of this repo and unzip it.
+
 
 ### Solution
 
