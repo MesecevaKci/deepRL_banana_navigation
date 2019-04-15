@@ -28,4 +28,4 @@ Depending on the operating system, the pre-built Unity environment can be downlo
 
 ### Solution
 
-The problem is solved using the deep Q-learning. The code is stored in the notebook "Navigation.ipynb" and some theoretical background and the description of the solution is described in the "report.md" document.
+The problem is solved using the deep Q-learning. The code is stored in the notebook [Navigation.ipynb](Navigation.ipynb) and some theoretical background and the description of the solution is described in the [report.md](report.md) document.
