@@ -38,15 +38,14 @@ Another potential problem with deep Q-learning is if the Q-network’s parameter
 
 Since the DQN algorithm first came out several enhancements have been proposed. 
 They include:
-Double DQN
+- Double DQN: 
 The basic DQN has a tendency to overestimate values for Q, which may be harmful to training performance and sometimes can lead to suboptimal policies. Double Q-Learning has been shown to work well in practice to help with this. The idea of double DQN is very simple: when selecting the best action to take in the next state one should use the main trained network, but values corresponding to this action should come from the target network. 
 
-
-Prioritized Experience Replay
+- Prioritized Experience Replay:
 The basic idea behind the Prioritized experienced replay is not all transitions are equally important and the more important transitions should be sampled with higher probability. In this way the agent will learn more efficiently. 
 
-Dueling DQN
-The Duealing DQN is based on a network that separately computes the advantage and value functions, combining them into a single Q-function only at the final layer. In this way, one can assess the value of each state without needing to learn the effect of each action.
+- Dueling DQN:
+The Dueling DQN is based on a network that separately computes the advantage and value functions, combining them into a single Q-function only at the final layer. In this way, one can assess the value of each state without needing to learn the effect of each action.
 
 
 
