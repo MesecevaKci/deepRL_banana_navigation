@@ -7,10 +7,9 @@ I will first briefly describe the theroretical background of the solution, then 
 
 ### Q-learning
 
-The goal of Q-learning is to learn a policy telling an agent what action to take under what circumstances. For any finite Markov decision process (FMDP), Q-learning finds a policy that is optimal in the sense that it maximizes the expected value of the total reward over any and all successive steps, starting from the current state. Q-learing is a model-free reinforcement learning algorithm, meaning that it can be used to solve problems with stochastic transitions and rewards not requiring adaptations 
-[Wikipedia].
+The goal of Q-learning is to learn a policy telling an agent what action to take under what circumstances. For any finite Markov decision process (FMDP), Q-learning finds a policy that is optimal in the sense that it maximizes the expected value of the total reward over any and all successive steps, starting from the current state. 
 
-Q-learning uses a table to store the maximum expected future rewards for each state-action pair. At each step, the agent observes the current state S(t) of the environment and, using the π policy, selects and executes the action a(t). By executing the action, the agent obtains the reward R(t+1) and the new state S(t+1). At this point, the agent is able to calculate Q(S(t), a(t)), updating the estimate. Over time, based on the agent's experience, this Q-table becomes a reference table for the agent to select the best action based on the Q-value.
+Q-learning uses a table to store the maximum expected future rewards for each state-action pair. At each step t, the agent observes the current state S(t) of the environment and, using the π policy, selects and executes the action a(t). By executing the action, the agent obtains the reward R(t+1) and the new state S(t+1). At this point, the agent is able to calculate Q(S(t), a(t)), updating the estimate. Over time, based on the agent's experience, this Q-table becomes a reference table for the agent to select the best action based on the Q-value.
 
 
 ### Epsilon-policy
@@ -18,7 +17,7 @@ The environment's dynamic is initially unknown to the agent. In order to maximiz
 
 In early episodes, the agent's knowledge is quite limited and in order to discover the optimal policy it has to explore all possibile state-action pairs. However, the agent should always act somewhat greedily, towards its goal of maximizing return as quickly as possible. 
 
-The need to balance these two competing requirements in known as the Exploration versus Exploitation problem. One potential solution to this problem is implemented by using ϵ\epsilonϵ-greedy policies and gradually modifying epsilon over time.
+The need to balance these two competing requirements in known as the Exploration versus Exploitation problem. One potential solution to this problem is implemented by using epsilonϵ-greedy policies and evolving epsilon over time.
 
 More precisely, the agent starts by exploring i.e. choosing a random action with some probability epsilon 𝛜. Simultaneously, the agent continues to exploit its knowledge of the environment by choosing actions based on the policy with probability (1-𝛜). At the beginning, the value of epsilon is large and as the time goes on, the value of epsilon decays. In this way the agent gains more experience over time by increasingly rellying on the exploitation. The usual practice is to start with epsilon = 1 corresponding to 100% random actions and slowly decrease it to a small value such as 5% or 2% of random actions. 
 
