@@ -106,4 +106,11 @@ The best performing learning algorithm, i.e. the algorithm in which the average 
 
 - Moreover, in this work a tuning only a few parameters was tested. In the future one should carru out a more systematic exploration of the various hyperparameters.
 
+### References
 
+1. This report is mainly based on the learning material of the [Udacity Deep Reinforcement Learning Nanodegree Program](https://eu.udacity.com/) and references therein.
+2. https://en.wikipedia.org/wiki/Reinforcement_learning
+3. Maxim Lapan: Deep Reinforcement Learning Hands-On, Packt Publishing, Release Date: June 2018, 
+ISBN: 9781788834247
+4. Rajalingappaa Shanmugamani, Yang Wenzhuo, Sean Saito:vPython Reinforcement Learning Projects, Packt Publishing, Release Date: September 2018, ISBN: 9781788991612
+5. https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html
