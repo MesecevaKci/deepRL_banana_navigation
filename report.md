@@ -19,19 +19,19 @@ In early episodes, the agent's knowledge is quite limited and in order to discov
 
 The need to balance these two competing requirements in known as the Exploration versus Exploitation problem. One potential solution to this problem is implemented by using epsilonϵ-greedy policies and evolving epsilon over time.
 
-More precisely, the agent starts by exploring i.e. choosing a random action with some probability epsilon 𝛜. Simultaneously, the agent continues to exploit its knowledge of the environment by choosing actions based on the policy with probability (1-𝛜). At the beginning, the value of epsilon is large and as the time goes on, the value of epsilon decays. In this way the agent gains more experience over time by increasingly rellying on the exploitation. The usual practice is to start with epsilon = 1 corresponding to 100% random actions and slowly decrease it to a small value such as 5% or 2% of random actions. 
+More precisely, the agent starts by exploring i.e. choosing a random action with some probability epsilon. Simultaneously, the agent continues to exploit its knowledge of the environment by choosing actions based on the policy with probability (1-epsilon). At the beginning, the value of epsilon is large and as the time goes on, the value of epsilon decays. In this way the agent gains more experience over time by increasingly rellying on the exploitation. The usual practice is to start with epsilon = 1 corresponding to 100% random actions and slowly decrease it to a small value such as 5% or less of random actions. 
 
 
 ### Deep Q-learning
 
 The Deep Q-Learning (DQN) algorithm represents the optimal action-value function as a neural network instead of a table. It turns out that reinforcement learning is very unstable when neural networks are used to represent the action values. These instabilities are fixed by using two key features:
-    Experience Replay
+    Experience Replay and Fixed Q-Targets, described below.
  
 
 As the agent interacts with the environment, the experiences are added to a reply buffer, but the sequence of experience tuples can be highly correlated. This correlation can be broken by sampling a small batch of tuples from the replay buffer. This is  known as experience replay. Moreover, by using the experience replay one can learn more from individual tuples multiple times.
 
-   Fixed Q-Targets
-Another potential problem with deep Q-learning is if the Q-network’s parameters are getting updated after each move, instabilities can arise. The problem is that the actual rewards may be sparse (there is a significant positive reward only when the game is won or significant penalty upon losing) and the algorithm can start behaving erratically if updated after every step. To make training more stable, there is a trick, called target network, whose predicted Q-values are used to backpropagate through and train the main Q-network. The target network’s parameters are not trained, but are periodically synchronized with the Q-network’s parameters. 
+   
+Another potential problem with deep Q-learning is if the Q-network’s parameters are getting updated after each move, instabilities can arise. The problem is that the actual rewards may be sparse (there is a significant positive reward only when the game is won or a significant penalty upon losing) and the algorithm can start behaving erratically if updated after every step. To make training more stable, one can use two netoworks: a target network, whose predicted Q-values are used to backpropagate through and train the main Q-network. The parameters of the target network are not trained, but are periodically synchronized with the Q-network’s parameters. 
 
 
 ### Enhancements 
