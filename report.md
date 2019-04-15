@@ -7,9 +7,9 @@ I will first briefly describe the theroretical background of the solution, then 
 
 ### Q-learning
 
-The goal of Q-learning is to learn a policy telling an agent what action to take under what circumstances. For any finite Markov decision process (FMDP), Q-learning finds a policy that is optimal in the sense that it maximizes the expected value of the total reward over any and all successive steps, starting from the current state. 
+The goal of Q-learning is to learn a policy based on which a reinforcement agent will choose which action to take under what circumstances. For any finite Markov decision process, Q-learning finds a policy that is optimal in a way that it maximizes the expected value of the total reward over any and all successive steps, starting from the current state. 
 
-Q-learning uses a table to store the maximum expected future rewards for each state-action pair. At each step t, the agent observes the current state S(t) of the environment and, using the π policy, selects and executes the action a(t). By executing the action, the agent obtains the reward R(t+1) and the new state S(t+1). At this point, the agent is able to calculate Q(S(t), a(t)), updating the estimate. Over time, based on the agent's experience, this Q-table becomes a reference table for the agent to select the best action based on the Q-value.
+Q-learning uses a table to store the maximum expected future rewards for each action-state pair. At each step t, the agent observes the current state S(t) of the environment and, using the π policy, selects and executes the action a(t). By executing the action, the agent obtains the reward R(t+1) and the new state S(t+1). At this point, the agent is able to calculate Q(S(t), a(t)), updating the estimate. Over time, based on the agent's experience, this Q-table becomes a reference table for the agent to select the best action based on the Q-value.
 
 
 ### Epsilon-policy
