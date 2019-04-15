@@ -52,33 +52,35 @@ The Dueling DQN is based on a network that separately computes the advantage and
 ### This work
 
 To solve the task I have run experiements with two different networks: 
-(Basic) DQN algorithm 
-Double DQN algorithm.
+- (Basic) DQN algorithm 
+- Double DQN algorithm.
 
 
-Neural Network: The used network architecture consists of three fully connected layers with 64, 64, and 4 nodes (arch1) and 128, 128, and 4 nodes (arch2) using relu activation.
+Neural Network: 
+The used network architecture consists of three fully connected layers with 64, 64, and 4 nodes (arch1) and 128, 128, and 4 nodes (arch2) using relu activation.
 
 
-Epsilon: Epsilon-decay was the other hyperparameter that was modifed in order to improve learning. Two values of epsilon-decay were tried: 0.995 (pars1) and 0.99 (pars2).
+Epsilon-policy: 
+Epsilon-decay was the other hyperparameter that was modifed in order to improve learning. Two values of epsilon-decay were tried: 0.995 (pars1) and 0.99 (pars2).
 
-In all models the hyperparameters chosen were the same, as described below:
+In all models the rest of the (hyper)parameters were the same:
 
     Agent Parameters
 
-BUFFER_SIZE = 100,000  # replay buffer size
-BATCH_SIZE = 64         # minibatch size
-GAMMA = 0.99            # discount factor
-TAU = 0.001              # for soft update of target parameters
-LR = 0.0005             # learning rate 
-UPDATE_EVERY = 4        # how often to update the network   
+     BUFFER_SIZE = 100,000  # replay buffer size
+     BATCH_SIZE = 64        # minibatch size
+     GAMMA = 0.99           # discount factor
+     TAU = 0.001            # for soft update of target parameters
+     LR = 0.0005            # learning rate 
+     UPDATE_EVERY = 4       # how often to update the network   
 
 
     Fixed Training Parameters
 
-        Number of training episodes: 2000 or when average score reached
-        Maximum number of timesteps per episode: 1000
-        Starting value of epsilon, for epsilon-greedy action selection: 1.0
-        End value of epsilon: 0.01
+     Number of training episodes: 2000 or when average score reached
+     Maximum number of timesteps per episode: 1000
+     Starting value of epsilon, for epsilon-greedy action selection: 1.0
+     End value of epsilon: 0.01
         
 
 ### Results
@@ -97,7 +99,7 @@ The best performing learning algorithm, i.e. the algorithm in which the average 
 
 ### Future improvements
 
-As discussed above, there are multiple improvements to the DQN proposed. In this project only yhe doubleDQn was tested, leaving the space for including in the future the Prioritized Replay Experience or Dueling DQN. 
+As discussed above, there are multiple improvements to the DQN proposed. In this project only the basic DQN and doubleDQN were tested, leaving the space for implenting the Prioritized Replay Experience or Dueling DQN in the future. 
 Moreover, in this work a tuning only a few parameters was tested. In the future one should carru out a more systematic exploration of the various hyperparameters.
 
 
