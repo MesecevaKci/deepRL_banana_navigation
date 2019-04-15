@@ -87,12 +87,12 @@ In all models the rest of the (hyper)parameters were the same:
 
 In the table below is the number of iterations-100 needed to reach the average score of 13 with different algorithms and parameters (not all possible combinations were tried): 
 
-DQN+pars1_arch1  427
-DQN+pars2_arch1  296
-DQN+pars2_arch2  330 
-DoubleDQN+pars1+arch1  378 
-DoubleDQN+pars2+arch1  308
-DoubleDQN+pars2+arch2  369
+| DQN+pars1_arch1 | 427 |
+| DQN+pars2_arch1 | 296 |
+| DQN+pars2_arch2 | 330 |
+| DoubleDQN+pars1+arch1 | 378 |
+| DoubleDQN+pars2+arch1 | 308 |
+| DoubleDQN+pars2+arch2 | 369 |
 
 The best performing learning algorithm, i.e. the algorithm in which the average score of 13 from the last 100 episodes was reached is basic DQN with the 64 nodes in the hidden layers and epsilon-decay=0.99.
 
