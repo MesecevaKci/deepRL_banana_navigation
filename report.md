@@ -108,7 +108,7 @@ The best performing learning algorithm, i.e. the algorithm in which the average 
 
 ### References
 
-1. This report is mainly based on the learning material of the [Udacity Deep Reinforcement Learning Nanodegree Program](https://eu.udacity.com/) and references therein.
+1. This report is mainly based on the learning material of the [Udacity Deep Reinforcement Learning Nanodegree Program](https://eu.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893) and references therein.
 2. https://en.wikipedia.org/wiki/Reinforcement_learning
 3. Maxim Lapan: Deep Reinforcement Learning Hands-On, Packt Publishing, Release Date: June 2018, 
 ISBN: 9781788834247
