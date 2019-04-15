@@ -99,7 +99,8 @@ The best performing learning algorithm, i.e. the algorithm in which the average 
 
 ### Future improvements
 
-As discussed above, there are multiple improvements to the DQN proposed. In this project only the basic DQN and doubleDQN were tested, leaving the space for implenting the Prioritized Replay Experience or Dueling DQN in the future. 
-Moreover, in this work a tuning only a few parameters was tested. In the future one should carru out a more systematic exploration of the various hyperparameters.
+- As discussed above, there are multiple improvements to the DQN proposed. In this project only the basic DQN and doubleDQN were tested, leaving the space for implenting the Prioritized Replay Experience or Dueling DQN in the future. 
+
+- Moreover, in this work a tuning only a few parameters was tested. In the future one should carru out a more systematic exploration of the various hyperparameters.
 
 
