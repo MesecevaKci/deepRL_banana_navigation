@@ -17,7 +17,11 @@ The project environment is similar to, but not identical to the Banana Collector
 
 ### Setup 
 
-The project uses Python 3, PyTorch v0.4 and pre-built Unity Banana environment.
+The project uses 
+- Python 3.6 with necessary packages: numpy, random, collections, matplotlib 
+- PyTorch v0.4 
+- and the pre-built Unity Banana environment. 
+
 Depending on the operating system, the pre-built Unity environment can be downloaded from:
 
 - Linux: click [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
