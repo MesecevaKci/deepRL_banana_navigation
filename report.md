@@ -97,8 +97,9 @@ In the table below is the number of iterations-100 needed to reach the average s
 | DoubleDQN+pars2+arch2 | 369 |
  
 
-The best performing learning algorithm, i.e. the algorithm in which the average score of 13 from the last 100 episodes was reached is basic DQN with the 64 nodes in the hidden layers and epsilon-decay=0.99.
+The best performing learning algorithm, i.e. the algorithm in which the average score of 13 from the last 100 episodes was reached is basic DQN with the 64 nodes in the hidden layers and epsilon-decay=0.99. The figure of the score versus episode number from the training  of this best performing agent is shown below.
 
+![alt text](ScoreVsEpisode_Best.png)
 
 ### Future improvements
 
