@@ -23,7 +23,7 @@ The project uses
 - and the pre-built Unity Banana environment. 
 
 The Python environment can be set up following the [Udacity instructions](https://github.com/udacity/deep-reinforcement-learning).
-Depending on the operating system, the pre-built Unity environment can be downloaded from:
+in the Dependencies section. Depending on the operating system, the pre-built Unity environment can be downloaded from:
 
 - Linux: click [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
 - Mac OSX: click [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
