@@ -22,7 +22,7 @@ The project uses
 - PyTorch v0.4 
 - and the pre-built Unity Banana environment. 
 
-The Python environment can be set up following the [Udacity instructions](https://github.com/udacity/deep-reinforcement-learning).
+The Python environment can be set up following the [Udacity instructions](https://github.com/udacity/deep-reinforcement-learning)
 in the Dependencies section. Depending on the operating system, the pre-built Unity environment can be downloaded from:
 
 - Linux: click [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
